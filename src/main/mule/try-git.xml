@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<mule xmlns="http://www.mulesoft.org/schema/mule/core" xmlns:doc="http://www.mulesoft.org/schema/mule/documentation"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.mulesoft.org/schema/mule/core http://www.mulesoft.org/schema/mule/core/current/mule.xsd">
+	<flow name="try-gitFlow" doc:id="38c7c4b3-de40-4728-8885-17aa3e4c5d04" >
+		<scheduler doc:name="Scheduler" doc:id="02493b2c-4125-4448-8b7e-76900be29d02" >
+			<scheduling-strategy >
+				<fixed-frequency timeUnit="DAYS"/>
+			</scheduling-strategy>
+		</scheduler>
+		<logger level="INFO" doc:name="Logger" doc:id="91c60299-4c41-40b7-a0cf-542a1073975a" message="Sample logger."/>
+	</flow>
+</mule>
